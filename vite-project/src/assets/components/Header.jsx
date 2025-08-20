@@ -8,8 +8,13 @@ const Header = () => {
   return (
     <header>
       <StyledContainer>
-        <StyledImage src={data.home.images.logo} alt="" />
-        <StyledNav>
+        <StyledImage
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+          src={data.home.images.logo}
+          alt=""
+        />
+        <StyledNav data-aos="fade-up-left" data-aos-duration="1000">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
@@ -25,6 +30,7 @@ const StyledImage = styled.img`
   width: 180px;
   box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
   padding: 0 2rem;
+  transition: 0.5s;
   &:hover {
     box-shadow: inset 4px 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;
   }
@@ -42,6 +48,7 @@ const StyledNav = styled.nav`
     text-transform: uppercase;
     box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
     padding: 0.5rem 1rem;
+    transition: 0.5s;
   }
   a:hover,
   a:active {

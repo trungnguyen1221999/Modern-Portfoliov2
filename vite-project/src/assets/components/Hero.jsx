@@ -57,8 +57,13 @@ const Hero = () => {
 
   return (
     <StyledContainerHero>
-      <StyledImage src={data.home.images.hero} alt="Hero" />
-      <div>
+      <StyledImage
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        src={data.home.images.hero}
+        alt="Hero"
+      />
+      <div data-aos="flip-right" data-aos-duration="1000">
         <StyledTitle>
           <h3>{data.home.header.title.hello}</h3>
           <StyledName>{data.home.header.title.name}</StyledName>
@@ -107,13 +112,22 @@ const StyledTitle = styled.div`
 `;
 
 const StyledIcon = styled.div`
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   gap: 10rem;
   justify-content: center;
   width: 100%;
   img {
     width: 12rem;
+    box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  img:hover {
+    box-shadow: inset 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;
   }
 `;
 

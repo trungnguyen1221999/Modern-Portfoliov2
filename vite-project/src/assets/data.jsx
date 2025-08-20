@@ -40,6 +40,73 @@ const data = {
         },
       },
     },
+    skiils: {
+      title: "Skills",
+      description:
+        "My skills are under construction 🚧, but I’m coding, learning, and leveling up every day. I may not know everything yet, but I learn faster than bugs appear in my code",
+      skillImage: {
+        html: {
+          src: "/images/html.png",
+          description: "Html",
+        },
+        css: {
+          src: "/images/css.png",
+          description: "Css",
+        },
+        js: {
+          src: "/images/js.png",
+          description: "JavaScripts",
+        },
+        react: {
+          src: "/images/react.png",
+          description: "React",
+        },
+        ecommerce: {
+          src: "/images/ecommerceS.png",
+          description: "eCommerce",
+        },
+      },
+    },
+    works: {
+      headeing: "My Works",
+      image: [
+        "/images/work1.png",
+        "/images/work2.png",
+        "/images/work3.png",
+        "/images/work4.png",
+        "/images/work5.png",
+        "/images/work6.png",
+      ],
+
+      description: (
+        <div>
+          <strong>
+            <p>
+              I’m also the founder of OmaCustom.fi, a brand I started back in
+              2024.
+            </p>
+          </strong>
+          <p>
+            At OmaCustom.fi, I create personalized products that turn everyday
+            items into something
+            <i>
+              unique, fun, and totally <strong>“you”</strong>
+            </i>
+            .
+          </p>
+          <p>
+            I built this brand from scratch because I wanted to combine my love
+            for creativity, tech, and helping people express themselves. Every
+            product has a little bit of me in it — from the idea to the final
+            design.
+          </p>
+          <p>
+            When I’m not coding or shipping custom goodies, I love traveling and
+            finding inspiration for the next quirky product idea.
+          </p>
+        </div>
+      ),
+    },
   },
 };
 
