@@ -1,9 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
-import { StyledContainer } from "../components/Header";
 import Skills from "../components/Skills";
 import Work from "./Work";
-import Contact from "./Contact";
+import ContactSection from "../components/ContactSection";
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
       <Hero />
       <Skills />
       <Work />
-      <Contact />
+      <ContactSection />
     </>
   );
 };

@@ -6,6 +6,7 @@ import Home from "./assets/pages/Home";
 import About from "./assets/pages/About";
 import Contact from "./assets/pages/Contact";
 import Header from "./assets/components/Header";
+import Footer from "./assets/components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
