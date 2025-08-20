@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer } from "./Header";
+
 import data from "../data";
 import styled from "styled-components";
 

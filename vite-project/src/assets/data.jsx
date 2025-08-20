@@ -107,6 +107,13 @@ const data = {
         </div>
       ),
     },
+
+    contact: {
+      title: "Contact Me",
+      address: "Pillilänkuja 21, Kauhajoki",
+      phoneNumber: "0123456",
+      emailAddress: "trungnguyen1221999@gmail.com",
+    },
   },
 };
 
