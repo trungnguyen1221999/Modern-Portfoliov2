@@ -19,13 +19,13 @@ const Contact = () => {
           <p>{data.home.contact.emailAddress}</p>
         </div>
       </StyledInfo>
-      <form action="">
+      <StyledForm action="">
         <input type="text" placeholder="Enter Your Name" />
         <input type="text" placeholder="Enter Your Email" />
         <input type="text" placeholder="Email Subject" />
         <input type="text" placeholder="Your Message" />
         <button>Send Message</button>
-      </form>
+      </StyledForm>
     </StyledContainer>
   );
 };
@@ -58,4 +58,13 @@ const StyledInfo = styled.div`
   }
 `;
 
-const StyledForm = styled.form``;
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  input {
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    outline: none;
+  }
+`;
