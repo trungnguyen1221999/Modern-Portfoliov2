@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  // ⚡ Cho Vercel, giữ base mặc định là "./"
+  base: "./",
+  build: {
+    outDir: "dist", // Vercel sẽ build ra folder này
+  },
+  server: {
+    port: 5173, // cổng khi chạy dev
+  },
+});
