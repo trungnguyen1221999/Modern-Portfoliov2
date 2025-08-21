@@ -46,6 +46,10 @@ const GridWorks = styled.div`
     filter: brightness(1);
     scale: 1.1;
   }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 `;
 
 const Container = styled.div`
@@ -57,5 +61,12 @@ const Container = styled.div`
     color: ${({ theme }) => theme.colors.primary};
     font-size: 3rem;
     margin-bottom: 8rem;
+  }
+  @media (max-width: 768px) {
+    margin-top: 15rem;
+    gap: 10rem;
+    h2 {
+      margin-bottom: 6rem;
+    }
   }
 `;

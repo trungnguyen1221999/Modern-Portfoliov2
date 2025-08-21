@@ -102,6 +102,10 @@ const StyledName = styled.h2`
 const StyledContainerHero = styled(StyledContainer)`
   gap: 30rem;
   margin-top: 5rem;
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+    gap: 10rem !important;
+  }
 `;
 
 const StyledTitle = styled.div`

@@ -63,6 +63,9 @@ const StyledContainer = styled.div`
   h2 {
     color: ${({ theme }) => theme.colors.primary};
   }
+  @media (max-width: 768px) {
+    margin: 15rem 0;
+  }
 `;
 
 const StyledInfo = styled.div`
@@ -92,6 +95,13 @@ const StyledInfo = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 32rem;
+    }
   }
 `;
 

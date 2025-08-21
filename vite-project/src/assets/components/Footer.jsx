@@ -12,7 +12,7 @@ const Footer = () => {
           src={data.home.images.logo}
           alt=""
         />
-        <a href="mailto: trungnguyen1221999@gmail.com">
+        <a className="email" href="mailto: trungnguyen1221999@gmail.com">
           trungnguyen1221999@gmail.com
         </a>
         <p>Phone Number: 0123456</p>
@@ -52,6 +52,15 @@ const StyledFooter = styled.footer`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+    gap: 10rem !important;
+  }
+  .email {
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration: underline;
+    font-style: italic;
+  }
 `;
 const StyledIcon = styled.div`
   display: flex;
@@ -62,6 +71,8 @@ const StyledIcon = styled.div`
     box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
     width: 7rem;
     transition: 0.5s !important;
+    cursor: pointer;import theme from './../../Theme';
+
   }
   img:hover {
     box-shadow: inset 4px 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;

@@ -72,6 +72,11 @@ const Container = styled.div`
   align-items: center;
   padding: 2rem 10rem;
   gap: 30rem;
+  @media (max-width: 768px) {
+    margin-top: 15rem;
+    flex-direction: column !important;
+    gap: 10rem;
+  }
 `;
 const StyledIcons = styled.div`
   margin-top: 4rem;
