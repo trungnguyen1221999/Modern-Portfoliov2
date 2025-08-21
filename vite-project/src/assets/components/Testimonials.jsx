@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import data from "../data";
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 
 const Testimonials = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   const [currentTes, setCurrentTest] = useState(0);
   const total = data.home.testimonials.avatars.length;
-  const itemPerPage = 3;
+  const itemPerPage = isMobile ? 1 : 3;
   const handleLeft = () => {
     setCurrentTest((index) => (index === 0 ? total - 1 : index - 1));
   };
@@ -77,7 +79,7 @@ const StyledTest = styled.div`
     transform: translateY(-50%);
     transform: translateY(50%);
     display: flex;
-    gap: calc(100vw - 20rem) !important;
+    gap: calc(100vw - 18rem) !important;
     img {
       width: 3rem;
       padding: 0;
