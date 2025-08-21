@@ -114,6 +114,33 @@ const data = {
       phoneNumber: "0123456",
       emailAddress: "trungnguyen1221999@gmail.com",
     },
+    testimonials: {
+      heading: "Testimonials",
+      avatars: [
+        "/images/testimonial.png",
+        "/images/testimonial.png",
+        "/images/testimonial.png",
+        "/images/testimonial.png",
+        "/images/testimonial.png",
+        "/images/testimonial.png",
+      ],
+      names: [
+        "Aino Virtanen",
+        "Eero Korhonen",
+        "Trung Korhonen",
+        "Aino Virtanen",
+        "My Korhonen",
+        "Eero Korhonen",
+      ],
+      comments: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident.",
+      ],
+    },
   },
 };
 
