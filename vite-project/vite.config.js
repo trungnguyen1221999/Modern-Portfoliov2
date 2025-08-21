@@ -3,12 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // ⚡ Cho Vercel, giữ base mặc định là "./"
-  base: "./",
-  build: {
-    outDir: "dist", // Vercel sẽ build ra folder này
-  },
-  server: {
-    port: 5173, // cổng khi chạy dev
-  },
+  base: "./", // <-- dùng ./ để build tĩnh chạy được trên Vercel hoặc GH Pages
 });
