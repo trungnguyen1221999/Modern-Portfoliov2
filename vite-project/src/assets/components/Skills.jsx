@@ -12,7 +12,7 @@ const Skills = () => {
         src={data.home.images.about}
         alt=""
       />
-      <div data-aos="fade-left" data-aos-duration="1000">
+      <div className="mobi" data-aos="fade-left" data-aos-duration="1000">
         <StyledTitle>{data.home.skiils.title}</StyledTitle>
         <p>{data.home.skiils.description}</p>
         <StyledIcons>
@@ -62,6 +62,9 @@ const StyledImage = styled.img`
   &:hover {
     border-radius: 0 50% 0 0;
   }
+  @media (max-width: 480px) {
+    width: 35rem;
+  }
 `;
 
 const Container = styled.div`
@@ -76,6 +79,11 @@ const Container = styled.div`
     margin-top: 15rem;
     flex-direction: column !important;
     gap: 10rem;
+  }
+  @media (max-width: 480px) {
+    .mobi {
+      padding: 0 3rem;
+    }
   }
 `;
 const StyledIcons = styled.div`
@@ -112,6 +120,9 @@ const StyledIcons = styled.div`
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    @media (max-width: 480px) {
+      width: 9rem;
+    }
   }
   img:hover {
     box-shadow: inset 4px 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;

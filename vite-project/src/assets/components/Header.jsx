@@ -58,12 +58,16 @@ const Header = () => {
 export default Header;
 
 const StyledImage = styled.img`
-  width: 180px;
+  width: 18rem;
   box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
   padding: 0 2rem;
   transition: 0.5s;
   &:hover {
     box-shadow: inset 4px 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;
+  }
+  @media (max-width: 480px) {
+    width: 12rem; /* giảm kích thước logo */
+    padding: 0 1rem;
   }
 `;
 
@@ -123,6 +127,15 @@ const StyledNavMobile = styled.nav`
       box-shadow: inset 4px 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;
     }
   }
+
+  /* Media nhỏ hơn 480px */
+  @media (max-width: 480px) {
+    gap: 5rem; /* khoảng cách giảm để vừa màn hình */
+    a {
+      font-size: 1.6rem; /* chữ nhỏ hơn cho điện thoại nhỏ */
+      padding: 0.5rem 0.8rem;
+    }
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -131,13 +144,25 @@ export const StyledContainer = styled.div`
   align-items: center;
   padding: 2rem 10rem;
   cursor: pointer;
+
   .menu {
     width: 3rem;
     box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
     z-index: 9999;
     padding: 0.2rem;
+
     @media (min-width: 769px) {
       display: none;
     }
+
+    /* Media nhỏ hơn 480px */
+    @media (max-width: 480px) {
+      width: 2.5rem; /* menu icon nhỏ hơn */
+    }
+  }
+
+  /* Media nhỏ hơn 480px cho padding container */
+  @media (max-width: 480px) {
+    padding: 1rem 2rem;
   }
 `;

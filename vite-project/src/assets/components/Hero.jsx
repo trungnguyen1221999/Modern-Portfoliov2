@@ -63,7 +63,7 @@ const Hero = () => {
         src={data.home.images.hero}
         alt="Hero"
       />
-      <div data-aos="flip-right" data-aos-duration="1000">
+      <div className="mobi" data-aos="flip-right" data-aos-duration="1000">
         <StyledTitle>
           <h3>{data.home.header.title.hello}</h3>
           <StyledName>{data.home.header.title.name}</StyledName>
@@ -91,12 +91,18 @@ export default Hero;
 const StyledImage = styled.img`
   width: 50rem;
   box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #ffffff;
+  @media (max-width: 480px) {
+    width: 35rem;
+  }
 `;
 
 const StyledName = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
   font-size: 3rem;
   font-weight: 900;
+  @media (max-width: 480px) {
+    font-size: 1.8rem; /* giảm cho điện thoại nhỏ */
+  }
 `;
 
 const StyledContainerHero = styled(StyledContainer)`
@@ -105,6 +111,14 @@ const StyledContainerHero = styled(StyledContainer)`
   @media (max-width: 768px) {
     flex-direction: column !important;
     gap: 10rem !important;
+  }
+  @media (max-width: 480px) {
+    gap: 5rem !important; /* giảm khoảng cách cho điện thoại nhỏ */
+    margin-top: 2rem;
+    padding: 0 1rem;
+    .mobi {
+      padding: 0 3rem !important;
+    }
   }
 `;
 
@@ -132,6 +146,13 @@ const StyledIcon = styled.div`
   }
   img:hover {
     box-shadow: inset 4px 6px #c7c7c7, inset -4px -4px 6px #ffffff;
+  }
+  @media (max-width: 480px) {
+    gap: 3rem;
+    img {
+      width: 8rem;
+      padding: 0.3rem;
+    }
   }
 `;
 

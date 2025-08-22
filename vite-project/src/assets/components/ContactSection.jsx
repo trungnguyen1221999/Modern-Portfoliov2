@@ -66,6 +66,9 @@ const StyledContainer = styled.div`
   @media (max-width: 768px) {
     margin: 15rem 0;
   }
+  @media (max-width: 480px) {
+    padding: 0 5rem;
+  }
 `;
 
 const StyledInfo = styled.div`
